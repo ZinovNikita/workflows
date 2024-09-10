@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  workflows:
+    image: workflows:v1
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/opt/src
+    environment:
+      NODE_VERSION: 20
+      WSPORT: 3001
